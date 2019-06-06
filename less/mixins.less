@@ -8,11 +8,24 @@
   align-items: @align;
 }
 
-//header
-.header_padding() {
-  padding: @hpadding;
-  margin: @hmargin;
+//nav
+.nav_padding() {
+  padding: @npadding;
+  margin: @nmargin;
 }
 .border {
-  border-bottom: 1px dashed @font-color;
+  border-bottom: 2px dashed @navigation-border;
+}
+
+.sign_button(@bgcolor,@textcolor) {
+  width: 80%;
+  font-size: 1.8rem;
+  border: solid 1px black;
+  background: @bgcolor;
+  color: @textcolor;
+  border-radius: 1rem;
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  text-align: center;
 }

@@ -1,19 +1,19 @@
 // Navigation Styles here
-@import "mixins";
-@import "variables";
 
-header {
-  .display-flex(row, space-between, center);
+.navigation {
+  width: 100%;
+  .display-flex(row, center, center);
+  font-size: 1.6rem;
   .border();
-  nav {
-    .display-flex(row, space-between, center);
-    width: 50%;
-    font-size: 1.6rem;
-    .header_padding();
+  padding: 20px;
 
+  nav {
+    .display-flex(row, flex-end, center);
+    width: 50%;
     a {
       color: @font-color;
       text-decoration: none;
+      margin-left: 8%;
 
       &:hover {
         color: lighten(@font-color, 30%);
