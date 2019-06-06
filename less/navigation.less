@@ -2,18 +2,29 @@
 
 .navigation {
   width: 100%;
-  .display-flex(row, center, center);
+  .display-flex(row, space-around, center);
   font-size: 1.6rem;
   .border();
-  padding: 20px;
+  padding: 2rem;
+  @media@mobile {
+    .display-flex(column, center, center);
+  }
 
   nav {
     .display-flex(row, flex-end, center);
     width: 50%;
+    @media@mobile {
+      .display-flex(row, space-between, flex-end);
+      width: 80%;
+      margin-top: 2%;
+    }
     a {
       color: @font-color;
       text-decoration: none;
       margin-left: 8%;
+      @media@mobile {
+        margin: 0;
+      }
 
       &:hover {
         color: lighten(@font-color, 30%);
