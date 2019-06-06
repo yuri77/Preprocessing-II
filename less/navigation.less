@@ -1,1 +1,23 @@
 // Navigation Styles here
+@import "mixins";
+@import "variables";
+
+header {
+  .display-flex(row, space-between, center);
+  .border();
+  nav {
+    .display-flex(row, space-between, center);
+    width: 50%;
+    font-size: 1.6rem;
+    .header_padding();
+
+    a {
+      color: @font-color;
+      text-decoration: none;
+
+      &:hover {
+        color: lighten(@font-color, 30%);
+      }
+    }
+  }
+}

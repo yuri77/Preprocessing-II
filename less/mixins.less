@@ -1,1 +1,18 @@
+@import "variables";
+
 // Mixins in here
+.display-flex(@direction,@justify,@align) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+//header
+.header_padding() {
+  padding: @hpadding;
+  margin: @hmargin;
+}
+.border {
+  border-bottom: 1px dashed @font-color;
+}
